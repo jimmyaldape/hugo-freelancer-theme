@@ -1,11 +1,11 @@
 {{ "<!-- Header -->" | safeHTML }}
-<header style="background-image: url('img/{{ with .Site.Params.header.background }}{{ . }}{{ else }}profile.png{{ end }}'); background-position: center; background-repeat: none;">
+<header style="background-image: url('img/{{ with .Site.Params.header.background }}{{ . }}{{ else }}profile.png{{ end }}'); background-position: center; background-repeat: no-repeat;">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <img class="img-responsive" src="img/{{ with .Site.Params.header.profile }}{{ . }}{{ else }}profile.png{{ end }}" alt="">
                 <div class="intro-text">
-                    <span class="name">Hi, my name is {{ with .Site.Params.header.name }}{{ . }}{{ end }}</span>
+                    <span class="name">{{ with .Site.Params.header.name }}{{ . }}{{ end }}</span>
                     <hr class="star-light">
                     <span class="skills">{{ with .Site.Params.header.subtitle }}{{ . }}{{ end }}</span>
                 </div>
