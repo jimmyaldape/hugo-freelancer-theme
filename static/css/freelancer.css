@@ -22,7 +22,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #18bc9c;
+    color: #1485CC;
 }
 
 h1,
@@ -82,7 +82,7 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: #18bc9c;
+    background: #5C8199;
 }
 
 header .container {
@@ -115,7 +115,7 @@ header .intro-text .skills {
     }
 
     header .intro-text .name {
-        font-size: 4.75em;
+        font-size: 2.75em;
     }
 
     header .intro-text .skills {
@@ -181,7 +181,7 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #18bc9c;
+    background: #1485CC;
 }
 
 section.success a,
@@ -220,7 +220,7 @@ section.success a.active {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba(24,188,156,.9);
+    background: rgba(204,39,39,.8);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
@@ -456,4 +456,27 @@ footer .footer-below {
 .portfolio-modal .modal-backdrop {
     display: none;
     opacity: 0;
+}
+
+#portfolio {
+    background-color: #E4EAF4;
+}
+
+#skills .skill-item {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+    background-color: #1485CC;
+    padding: 20px 10px;
+    margin: 0 0 15px;
+}
+
+@media(max-width:767px) {
+    #skills .skill-item {
+        margin: 0 0 30px;
+    }
+}
+
+#skills .description {
+    margin-bottom: 30px;
 }

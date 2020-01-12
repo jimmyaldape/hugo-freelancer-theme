@@ -1,0 +1,27 @@
+{{ "<!-- Skills Grid Section -->" | safeHTML }}
+<section id="skills">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>{{ with .Site.Params.skills.title }}{{.}}{{end}}</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 description">
+                <p>{{ with .Site.Params.skills.description }}{{.}}{{end}}</p>
+            </div>
+        </div>
+        <div class="row">
+            {{ range .Site.Params.skills.items }}
+            <div class="col-sm-3">
+                <div class="skill-item">
+                    {{ .name }}
+                </div>
+                
+            </div>
+            {{ end }}
+            
+        </div>
+    </div>
+</section>
